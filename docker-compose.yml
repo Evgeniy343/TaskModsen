@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: app-springboot-postgresql
+    image: app-springboot-postgresql
+    build:
+      dockerfile: "Dockerfile"
+      context: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - dbpostgresql
+  dbpostgresql:
+    image: postgres
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=event
+      - POSTGRES_PASSWORD=27112001jeka
+      - POSTGRES_USER=postgres
