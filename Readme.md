@@ -40,11 +40,16 @@ Event Organizer is an application for organize and work with events.<br/>
   - View organizers list
   - View organizer by id
 
+## ✨ Demo
+![demo.png](src/main/resources/demo.jpg)
+
 ## Requirements
 You will need [Docker](https://docs.docker.com/) (with Compose plugin) installed and running on your machine.
 
 We recommend using Docker Desktop on [macOS](https://docs.docker.com/desktop/install/mac-install/) /
-[Windows](https://docs.docker.com/desktop/install/windows-install/) and using [Docker Server](https://docs.docker.com/engine/install/#server) distribution for your Linux distribution of choice. Use installation instructions provided in the links above.
+[Windows](https://docs.docker.com/desktop/install/windows-install/) and using [Docker Server]
+(https://docs.docker.com/engine/install/#server) distribution for your Linux distribution of choice. 
+Use installation instructions provided in the links above.
   
 ## 🚀 Usage
 - Clone project:
